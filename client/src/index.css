@@ -1,0 +1,41 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    background: #7F7FD5;
+    background:-webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+}
+
+.h1{
+    text-align: center;
+}
+
+.outer-container-join{
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 15px;
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.form-group{
+    margin: 0 auto;
+    float: none;
+}
+
+.form-group{
+    width: 50%;
+}
+
+.title{
+    text-align: center;
+    top: 200px;
+}
+
+
+
+
