@@ -36,6 +36,12 @@ body, html{
     top: 200px;
 }
 
+.chatbox-container{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
 
 
 

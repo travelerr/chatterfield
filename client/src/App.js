@@ -11,11 +11,11 @@ class App extends React.Component{
             <div>
                 <nav className="navbar navbar-expand-lg navbar-light bg-light">
                     <ul className="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">My Network</a>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#">My Network</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Messages</a>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#">Messages</a>
                         </li>
                     </ul>
                 </nav>
@@ -29,7 +29,5 @@ class App extends React.Component{
         )
     }
 }
-
-//<Link to="/messages">Messages</Link>
 
 export default App;

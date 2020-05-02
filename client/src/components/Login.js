@@ -5,6 +5,7 @@ class Login extends React.Component{
     constructor(props){
         super(props);
         this.state = {
+            id: "",
             name: "",
             email: "",
             description: ""
@@ -15,12 +16,19 @@ class Login extends React.Component{
 
     }
 
+    /* Copy typed login form data to this.state - state remains single source of truth */
+
     handleChange(e) {
         const key = e.target.name;
         const value = e.target.value;
 
-        this.setState({ [key]: value });
+        this.setState({ 
+            id: Math.ceil(Math.random() * 10000),
+            [key]: value 
+        });
     }
+
+    /* Submit button sends login form data, via this.state to Local Storage */
 
     handleSubmit(event) {
         localStorage.setItem("currentStoredUser", JSON.stringify(this.state));
