@@ -69,14 +69,14 @@ class Network extends React.Component{
             <div className="list-group w-25">
                 {dummyUsers.map(user => {
                     return(
-                        <button onClick={(userId) => this.handleClick(user.id)} className="list-group-item list-group-item-action flex-column align-items-start ">
+                        <div key={user.id} onClick={(userId) => this.handleClick(user.id)} className="list-group-item list-group-item-action flex-column align-items-start ">
                             <div className="d-flex w-100 justify-content-between">
                             <img src={user.photoUrl} alt="User" height="42" width ="42"/>
                                 <h5 className="mb-1">{user.name}</h5>                                
                             </div>
                             <p className="mb-1">{user.email}</p>
                             <p className="mb-1">{user.description}</p>
-                        </button>
+                        </div>
                     )
                 })}
             </div> 

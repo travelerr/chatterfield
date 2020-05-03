@@ -9,7 +9,7 @@ class App extends React.Component{
     render(){
         return(
             <div>
-                <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                <nav className="navbar navbar-expand-lg navbar-light navbar-custom">
                     <ul className="navbar-nav mx-auto">
                         <li className="nav-item">
                             <a className="nav-link" href="#">My Network</a>

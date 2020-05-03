@@ -7,11 +7,18 @@ body, html{
 }
 
 .h1{
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    margin: 30px;
+
+}
+
+.navbar-custom{
+    background-color: rgb(255, 249, 249);
 }
 
 .outer-container-join{
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgb(255, 249, 249);
     border-radius: 15px;
     text-align: center;
     width: 50%;
@@ -25,15 +32,12 @@ body, html{
 .form-group{
     margin: 0 auto;
     float: none;
-}
-
-.form-group{
     width: 50%;
 }
 
 .title{
     text-align: center;
-    top: 200px;
+    top: 300px;
 }
 
 .chatbox-container{

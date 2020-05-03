@@ -4,15 +4,15 @@ const dummyUsers = [
     {
     id: 1,
     name: "Jack Dalton",
-    email: "johnnyd123@daltonfinegold.com",
+    email: "jackd123@daltonfinegold.com",
     description: "Car crash attorney",
     photoUrl: "https://i2.wp.com/www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png?resize=256%2C256&quality=100&ssl=1"
     },
 
     {
     id: "2",
-    name: "Nancy Roads",
-    email: "roadhog7@nines.pu",
+    name: "Nancy Place",
+    email: "places@nines.pu",
     description: "I need a new MDO!",
     photoUrl: "https://inspireducation.org.pk/wp-content/uploads/2019/06/person-girl-flat.png"
     },
@@ -21,7 +21,7 @@ const dummyUsers = [
     id: "3",
     name: "Bruce Speck",
     email: "speckler4th@driveme.com",
-    description: "I love the 4th of July",
+    description: "Spring time is here!",
     photoUrl: "https://i2.wp.com/www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png?resize=256%2C256&quality=100&ssl=1"
     },
 
@@ -51,9 +51,9 @@ const dummyUsers = [
 
     {
     id: "8",
-    name: "Nancy Dingo",
-    email: "dingo@dingo.com",
-    description: "More pups needed",
+    name: "Nancy Derby",
+    email: "derby@derby.com",
+    description: "More race cars needed",
     photoUrl: "https://inspireducation.org.pk/wp-content/uploads/2019/06/person-girl-flat.png"
     }
 ]
