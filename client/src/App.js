@@ -9,25 +9,30 @@ class App extends React.Component{
     render(){
         return(
             <div>
-                <nav className="navbar navbar-expand-lg navbar-light navbar-custom">
+                <BrowserRouter>
+                <nav className="navbar navbar-expand-lg navbar-light bg-light nav-">
                     <ul className="navbar-nav mx-auto">
                         <li className="nav-item">
-                            <a className="nav-link" href="#">My Network</a>
+                            <Link to="/network">Network</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Messages</a>
+                            <Link to="/messages">Messages</Link>
                         </li>
                     </ul>
                 </nav>
                 <div>
-                    <BrowserRouter>
+                    
                         <Route path="/" exact component={Login} />
                         <Route path="/network" exact component={Network} />
-                    </BrowserRouter>
+                        <Route path="/messages" exact component={Messages} />                   
+                    
                 </div>
+                </BrowserRouter>
             </div>
         )
     }
 }
+
+//<Link to="/messages">Messages</Link>
 
 export default App;

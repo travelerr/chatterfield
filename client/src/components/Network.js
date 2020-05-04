@@ -61,9 +61,6 @@ class Network extends React.Component{
     }
 
     render(){
-
-        const { currentUser } = this.state;
-
         return(
             <div>
             <div className="list-group w-25">

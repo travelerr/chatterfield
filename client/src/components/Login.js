@@ -33,6 +33,8 @@ class Login extends React.Component{
     handleSubmit(event) {
         localStorage.setItem("currentStoredUser", JSON.stringify(this.state));
 
+        this.props.history.push("/network");
+
     }
 
     render(){
@@ -50,9 +52,9 @@ class Login extends React.Component{
                         <textarea className="form-control" placeholder="Short Bio" rows="3" name="description" onChange={this.handleChange} />
                     </div>
                     <div className="form-group">
-                        <Link to="/network">
+                        
                             <button className="btn btn-primary" type="button" onClick={this.handleSubmit}>Submit Info</button>
-                        </Link>
+                        
                     </div>
                 </form>
             </div>
