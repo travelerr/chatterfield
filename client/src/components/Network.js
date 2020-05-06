@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { dummyUsers } from './Users.js';
 import Talk from 'talkjs';
 
 class Network extends React.Component{
     constructor(props){
         super(props);
+        
+        /* Create prop for TalkJS chatbox UI*/
+        this.chatbox = undefined;
         
         /* Retrieve user login data from Local Storage */
         let currentUser;
@@ -13,29 +16,29 @@ class Network extends React.Component{
             currentUser = JSON.parse(currentStoredUser)
         }
 
+        /* Set state to user data retrieved from Local Storage */
         this.state = {
             currentUser
 
         }
     }
 
+
     handleClick(userId) {
 
-        /* Get both users */
+        /* Get user from state, get user from dummyUsers in ./Users.js */
         const { currentUser } = this.state;
         const user = dummyUsers.find(user => user.id === userId);
 
         console.log(currentUser);
         console.log(user);
 
-        /* Create talk session */
+        /* Create talk session with TalkJs API*/
         Talk.ready.then(() => {
             const me = new Talk.User(currentUser);
             const other = new Talk.User(user);
 
-            console.log(me);
-            console.log(other);
-
+            /* If no pior talk session, create ne session between two users */
             if(!window.talkSession) {
                 window.talkSession = new Talk.Session({
                     appId: "twBRxQzL",
@@ -60,6 +63,7 @@ class Network extends React.Component{
 
     }
 
+    /* Render user list on lefthand side of screen, render lite chatbox in bottom right of screen */
     render(){
         return(
             <div>
@@ -77,9 +81,9 @@ class Network extends React.Component{
                     )
                 })}
             </div> 
-            <div className="chatbox-container" ref={c => this.container = c}>
-                <div id="talkjs-container" style={{height: "300px"}}><i></i></div>
-            </div>
+            <Fragment>
+                <div className="chatbox-container" style={{height: "500px"}} ref={c => this.container = c}></div>
+            </Fragment>
             </div>
         )
     }

@@ -1,4 +1,4 @@
-/* Dummy user data, will begin work on database connection soon */
+/* Dummy user data, will begin work on database soon */
 
 const dummyUsers = [
     {

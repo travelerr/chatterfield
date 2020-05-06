@@ -1,29 +1,26 @@
 import React, {Fragment} from 'react';
 import Talk from 'talkjs';
 
-/* Component will be used to render message history between two or more users.
-   Component will be displayed in mounted inbox container, and on 'Messages' page 
-   accessed on navigation bar
-*/
-
 class Messages extends React.Component{
-
     constructor(props) {
         super(props);
 
+        /* Create prop for TalkJS inbox UI */
         this.inbox = undefined;
+
+        /* get user data stored in Local Storage and store in currentUser */
         let currentUser;
         const currentTalkjsUser = localStorage.getItem('currentTalkjsUser');
         if (currentTalkjsUser) {
             currentUser = JSON.parse(currentTalkjsUser)
         }
 
+        /* Set state to currenUser */
         this.state = {
             currentUser
         }
     }
-
-
+    
     componentDidMount() {
         Talk.ready
             .then(() => {

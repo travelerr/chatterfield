@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 class Login extends React.Component{
     constructor(props){
@@ -52,9 +51,7 @@ class Login extends React.Component{
                         <textarea className="form-control" placeholder="Short Bio" rows="3" name="description" onChange={this.handleChange} />
                     </div>
                     <div className="form-group">
-                        
-                            <button className="btn btn-primary" type="button" onClick={this.handleSubmit}>Submit Info</button>
-                        
+                        <button className="btn btn-primary" type="button" onClick={this.handleSubmit}>Submit Info</button>    
                     </div>
                 </form>
             </div>

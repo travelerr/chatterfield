@@ -4,7 +4,6 @@ import Login from './components/Login';
 import Network from './components/Network';
 import Messages from './components/Messages';
 
-
 class App extends React.Component{
     render(){
         return(
@@ -15,17 +14,16 @@ class App extends React.Component{
                         <li className="nav-item">
                             <Link to="/network">Network</Link>
                         </li>
+                        <div></div>
                         <li className="nav-item">
                             <Link to="/messages">Messages</Link>
                         </li>
                     </ul>
                 </nav>
                 <div>
-                    
-                        <Route path="/" exact component={Login} />
-                        <Route path="/network" exact component={Network} />
-                        <Route path="/messages" exact component={Messages} />                   
-                    
+                    <Route path="/" exact component={Login} />
+                    <Route path="/network" exact component={Network} />
+                    <Route path="/messages" exact component={Messages} />
                 </div>
                 </BrowserRouter>
             </div>
