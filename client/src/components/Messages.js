@@ -8,7 +8,7 @@ class Messages extends React.Component{
         /* Create prop for TalkJS inbox UI */
         this.inbox = undefined;
 
-        /* get user data stored in Local Storage and store in currentUser */
+        /* Get user data stored in Local Storage and store in currentUser */
         let currentUser;
         const currentTalkjsUser = localStorage.getItem('currentStoredUser');
         if (currentTalkjsUser) {
