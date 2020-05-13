@@ -2,7 +2,7 @@ import React, {Fragment} from 'react';
 import Talk from 'talkjs';
 
 class Messages extends React.Component{
-    constructor(props) {
+        constructor(props) {
         super(props);
 
         /* Create prop for TalkJS inbox UI */
@@ -10,21 +10,23 @@ class Messages extends React.Component{
 
         /* get user data stored in Local Storage and store in currentUser */
         let currentUser;
-        const currentTalkjsUser = localStorage.getItem('currentTalkjsUser');
+        const currentTalkjsUser = localStorage.getItem('currentStoredUser');
         if (currentTalkjsUser) {
             currentUser = JSON.parse(currentTalkjsUser)
         }
-
-        /* Set state to currenUser */
+        
+        /* Set state to currentUser */
         this.state = {
-            currentUser
+            currentUser,
         }
+
     }
     
     componentDidMount() {
         Talk.ready
             .then(() => {
                 const me = new Talk.User(this.state.currentUser);
+                console.log(me);
                 
                 if (!window.talkSession) {
                     window.talkSession = new Talk.Session({
@@ -37,9 +39,10 @@ class Messages extends React.Component{
                 this.inbox.mount(this.container);
 
             })
-            .catch(e => console.error(e));
+            
+            
     }
-
+        
     render() {
         return (
             <Fragment>

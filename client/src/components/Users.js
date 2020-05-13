@@ -2,7 +2,7 @@
 
 const dummyUsers = [
     {
-    id: 1,
+    id: "1",
     name: "Jack Dalton",
     email: "jackd123@daltonfinegold.com",
     description: "Car crash attorney",
@@ -42,7 +42,7 @@ const dummyUsers = [
     },
 
     {
-    id: "7",
+    id: "6",
     name: "Carol Spletzer",
     email: "spletz34@doghouse.com",
     description: "Here for the pasta",
@@ -50,7 +50,7 @@ const dummyUsers = [
     },
 
     {
-    id: "8",
+    id: "7",
     name: "Nancy Derby",
     email: "derby@derby.com",
     description: "More race cars needed",

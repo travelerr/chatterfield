@@ -31,6 +31,4 @@ class App extends React.Component{
     }
 }
 
-//<Link to="/messages">Messages</Link>
-
 export default App;

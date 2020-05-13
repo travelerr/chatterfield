@@ -22,10 +22,13 @@ class Login extends React.Component{
         const value = e.target.value;
 
         this.setState({ 
-            id: Math.ceil(Math.random() * 10000),
+            id: "100",
             [key]: value 
         });
+
+        console.log(this.state);
     }
+    
 
     /* Submit button sends login form data, via this.state to Local Storage */
 
