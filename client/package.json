@@ -16,8 +16,8 @@
     "talkjs": "^0.14.1"
   },
   "scripts": {
-    "start": "npm run-script start",
-    "build": "npm run-script build",
+    "start": "npm start",
+    "build": "npm build",
     "test": "npm test",
     "eject": "npm eject"
   },
