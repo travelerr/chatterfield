@@ -14,10 +14,10 @@
     "talkjs": "^0.14.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "npm start",
     "build": "npm build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "npm test",
+    "eject": "npm eject"
   },
   "eslintConfig": {
     "extends": "react-app"
