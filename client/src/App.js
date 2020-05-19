@@ -9,7 +9,8 @@ class App extends React.Component{
         return(
             <div>
                 <BrowserRouter>
-                <nav className="navbar navbar-expand-lg navbar-light bg-light nav-">
+                <nav className="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+                    <div class="container">
                     <ul className="navbar-nav mx-auto">
                         <li className="nav-item">
                             <Link to="/network">Network</Link>
@@ -19,6 +20,7 @@ class App extends React.Component{
                             <Link to="/messages">Messages</Link>
                         </li>
                     </ul>
+                    </div>
                 </nav>
                 <div>
                     <Route path="/" exact component={Login} />
